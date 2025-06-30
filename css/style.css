@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(135deg, #002868 0%, #bf0a30 50%, #002868 100%);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#hero {
+    background: linear-gradient(rgba(0,40,104,0.8), rgba(191,10,48,0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23fff" width="1200" height="400"/><path fill="%23002868" d="M0 0h400v400H0z"/><path fill="%23bf0a30" d="M400 0h400v400H400z"/><path fill="%23002868" d="M800 0h400v400H800z"/></svg>');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+h2 {
+    color: #002868;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #bf0a30;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.day {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-left: 4px solid #bf0a30;
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+#activities ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    margin-left: 0;
+}
+
+#activities li {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#packing ul, #friends ul {
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #002868;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    #hero h2 {
+        font-size: 2rem;
+    }
+}
