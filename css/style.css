@@ -168,6 +168,222 @@ ul {
     background-color: #a00825;
 }
 
+.challenge-banner {
+    background: linear-gradient(135deg, #bf0a30 0%, #002868 100%);
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.challenge-banner h2 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.challenge-link {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border: 2px solid rgba(255,255,255,0.3);
+    transition: all 0.3s;
+}
+
+.challenge-link:hover {
+    background-color: rgba(255,255,255,0.3);
+    border-color: white;
+}
+
+/* Western/RDR2 Styling for Photographer Challenge */
+.western-intro {
+    background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #8B4513 100%);
+    color: #F5DEB3;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 3px solid #654321;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.3), 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.western-intro::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid #F5DEB3;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.western-intro h2 {
+    color: #F5DEB3;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+}
+
+.opening-line {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #FFE4B5;
+    margin: 0;
+}
+
+.journal-entry {
+    background: linear-gradient(to bottom, #F5DEB3 0%, #DDBF94 100%);
+    color: #654321;
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: 3px solid #8B4513;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+    margin: 2rem 0;
+}
+
+.journal-entry::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid #8B4513;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+.journal-entry p {
+    margin-bottom: 1.5rem;
+    text-indent: 2rem;
+    font-size: 1.1rem;
+}
+
+.journal-entry p:last-child {
+    margin-bottom: 0;
+}
+
+.hunting-ground, .sketchbook, .challenges {
+    background: linear-gradient(to bottom, #F4E4BC 0%, #E6D3A3 100%);
+    border: 2px solid #8B4513;
+    border-radius: 10px;
+    color: #654321;
+    font-family: 'Georgia', serif;
+}
+
+.hunting-ground h3, .sketchbook h3, .challenges h3 {
+    color: #8B4513;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    border-bottom: 2px solid #8B4513;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.bounty-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.bounty-item {
+    background: linear-gradient(135deg, #DEB887 0%, #D2B48C 100%);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #8B4513;
+    border-left: 6px solid #654321;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.bounty-item h5 {
+    color: #654321;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.bounty-item em {
+    color: #8B4513;
+    font-size: 0.9rem;
+}
+
+.challenge-intro {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #8B4513;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(139, 69, 19, 0.1);
+    border-radius: 8px;
+}
+
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.challenge-card {
+    background: linear-gradient(135deg, #DEB887 0%, #D2B48C 100%);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #8B4513;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.challenge-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.challenge-card h4 {
+    color: #654321;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #8B4513;
+    padding-bottom: 0.5rem;
+}
+
+.challenge-card.legendary {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
+    border-color: #B8860B;
+    position: relative;
+    overflow: hidden;
+}
+
+.challenge-card.legendary::before {
+    content: '★';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #8B4513;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.1); }
+}
+
 footer {
     background-color: #002868;
     color: white;
